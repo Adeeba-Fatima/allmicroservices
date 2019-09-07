@@ -1,0 +1,50 @@
+<form role="form">
+  <div class="form-group">
+     <label for="user_first_name">First Name: </label>
+     <input type="text" class="form-control field" [(ngModel)]="skill.id" id="skill_first_name" placeholder="First Name"
+       name="firstname">
+   </div>
+   <div class="form-group">
+     <label for="user_last_name">Last Name: </label>
+     <input type="text" class="form-control field" [(ngModel)]="skill.name" id="skill_last_name" placeholder="Last Name"
+       name="lastname"> 
+   </div>
+   <div class="form-group">
+     <label for="user_email">Email: </label>
+     <input type="text" class="form-control field" id="skill_email" [(ngModel)]="skill.tableOfContents" placeholder="Email" name="email">
+   </div>
+   <div class="form-group">
+     <label for="user_signup_pass">Enter Password:</label>
+     <input type="text" class="form-control field" id="skill_signup_pass" [(ngModel)]="skill.prerequisites" placeholder="Enter Password"
+       name="password">
+   </div>
+ 
+   <div class="text-center">
+       <button class="btn btn-success" (click)="createUser()">Sign Up</button>
+   </div>
+ </form>
+
+ <table width="80%" border="1">
+  <thead>
+    
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Email</th>
+    <th>Email</th>
+  </thead>
+  <tbody>
+    
+      <tr>
+      <td>{{skill1.id}}</td>
+      <td>{{skill1.name}}</td>
+      <td>{{skill1.tableOfContents}}</td>
+      <td>{{skill1.prerequisites}}</td>
+      </tr>
+      <tr>
+        <td>{{skill2.id}}</td>
+        <td>{{skill2.name}}</td>
+        <td>{{skill2.tableOfContents}}</td>
+        <td>{{skill2.prerequisites}}</td>
+        </tr>
+  </tbody>
+</table>

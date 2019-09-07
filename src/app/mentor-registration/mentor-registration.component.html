@@ -1,0 +1,53 @@
+
+<div class="container">
+    <div class="row">
+        <div class="form_bg">
+            <form role="form">
+                <div class="form-group">
+                   <label for="user_first_name">First Name: </label>
+                   <input type="text" class="form-control field" [(ngModel)]="mentor.name" id="skill_first_name" placeholder="First Name"
+                     name="firstname">
+                 </div>
+                 <div class="form-group">
+                   <label for="user_last_name">Last Name: </label>
+                   <input type="text" class="form-control field" [(ngModel)]="mentor.password" id="skill_last_name" placeholder="Last Name"
+                     name="lastname"> 
+                 </div>
+                 <div class="form-group">
+                   <label for="user_email">Email: </label>
+                   <input type="text" class="form-control field" id="skill_email" [(ngModel)]="mentor.firstName" placeholder="Email" name="email">
+                 </div>
+                 <div class="form-group">
+                   <label for="user_signup_pass">Enter Password:</label>
+                   <input type="text" class="form-control field" id="skill_signup_pass" [(ngModel)]="mentor.lastName" placeholder="Enter Password"
+                     name="text">
+                 </div>
+                 <div class="form-group">
+                    <label for="user_signup_pass">Enter Password:</label>
+                    <input type="text" class="form-control field" id="skill_signup_pass" [(ngModel)]="mentor.contactNumber" placeholder="Enter Password"
+                      name="text">
+                  </div>
+                  <div class="form-group">
+                    <label for="user_signup_pass">Enter Password:</label>
+                    <input type="text" class="form-control field" id="skill_signup_pass" [(ngModel)]="mentor.email" placeholder="Enter Password"
+                      name="text">
+                  </div>
+                  <div class="form-group">
+                    <label for="user_signup_pass">Enter Password:</label>
+                    <input type="text" class="form-control field" id="skill_signup_pass" [(ngModel)]="mentor.exp" placeholder="Enter Password"
+                      name="text">
+                  </div>
+                  <div class="form-group">
+                    <label for="user_signup_pass">Enter Password:</label>
+                    <input type="text" class="form-control field" id="skill_signup_pass" [(ngModel)]="mentor.url" placeholder="Enter Password"
+                      name="text">
+                  </div>
+
+               
+                 <div class="text-center">
+                     <button class="btn btn-success" (click)="createUser()">Sign Up</button>
+                 </div>
+               </form>
+        </div>
+    </div>
+</div>
